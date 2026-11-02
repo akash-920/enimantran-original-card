@@ -6,6 +6,7 @@ import haldiImg from '../assets/event-haldi.jpg';
 import mehendiImg from '../assets/event-mehndi.jpg';
 import sangeetImg from '../assets/event-sangeet.jpg';
 import weddingImg from '../assets/couple-sofa.jpg';
+import vidaiImg from '../assets/bride-silver-lehenga.jpg';
 
 const celebrations = [
   {
@@ -14,7 +15,7 @@ const celebrations = [
     tagline: 'A golden glow for the bride & groom to be',
     date: 'Sunday, 22nd November 2026',
     time: '9:00 AM onwards',
-    venue: 'Mankameshwar Palace, Kanpur, Uttar Pradesh',
+    venue: 'At Home',
     image: haldiImg,
     gradient: 'from-amber-300 to-yellow-500',
     reverse: false,
@@ -25,7 +26,7 @@ const celebrations = [
     tagline: 'Hands painted with love, laughter & sacred henna',
     date: 'Sunday, 22nd November 2026',
     time: '4:00 PM onwards',
-    venue: 'Mankameshwar Palace, Kanpur, Uttar Pradesh',
+    venue: 'At Home',
     image: mehendiImg,
     gradient: 'from-rose-400 to-pink-500',
     reverse: true,
@@ -36,7 +37,7 @@ const celebrations = [
     tagline: 'An evening of music, dance & celebration',
     date: 'Sunday, 22nd November 2026',
     time: '6:00 PM onwards',
-    venue: 'Mankameshwar Palace, Kanpur, Uttar Pradesh',
+    venue: 'At Home',
     image: sangeetImg,
     gradient: 'from-fuchsia-500 to-purple-600',
     reverse: false,
@@ -52,6 +53,17 @@ const celebrations = [
     gradient: 'from-maroon to-rose',
     reverse: true,
   },
+  {
+    id: '05',
+    name: 'Kanya Prasthan (Vidai)',
+    tagline: 'With love, blessings, and fond farewells.',
+    date: 'Tuesday, 24th November 2026',
+    time: '8:00 AM onwards',
+    venue: 'Mankameshwar Palace, Kanpur, Uttar Pradesh',
+    image: vidaiImg,
+    gradient: 'from-rose-500 to-amber-500',
+    reverse: false,
+  },
 ];
 
 export default function Itinerary() {
@@ -64,7 +76,7 @@ export default function Itinerary() {
             Wedding <span className="text-gold-shimmer">Itinerary</span>
           </h2>
           <p className="max-w-xl font-serif text-lg text-maroon-dark/70">
-            Four beautiful moments woven into one celebration — we'd be honoured to have you at any, or all of them.
+            Five beautiful moments woven into one celebration — we'd be honoured to have you at any, or all of them.
           </p>
         </div>
 

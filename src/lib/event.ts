@@ -69,7 +69,7 @@ export const EVENT = {
       day: 'Sunday',
       date: '22nd November 2026',
       time: '9:00 AM onwards',
-      venue: 'Mankameshwar Palace',
+      venue: 'At Home',
       city: 'Kanpur, Uttar Pradesh',
       description:
         'Commencing the auspicious wedding celebrations with fragrant haldi paste, yellow marigolds, and warm family blessings.',
@@ -83,7 +83,7 @@ export const EVENT = {
       day: 'Sunday',
       date: '22nd November 2026',
       time: '4:00 PM onwards',
-      venue: 'Mankameshwar Palace',
+      venue: 'At Home',
       city: 'Kanpur, Uttar Pradesh',
       description:
         'Adorning the radiant bride with delicate traditional henna patterns accompanied by folk rhythms and joyous festivities.',
@@ -97,7 +97,7 @@ export const EVENT = {
       day: 'Sunday',
       date: '22nd November 2026',
       time: '6:00 PM onwards',
-      venue: 'Mankameshwar Palace',
+      venue: 'At Home',
       city: 'Kanpur, Uttar Pradesh',
       description:
         'A magical night of sparkling dance performances, melodies, laughter, and high-energy celebration with loved ones.',
@@ -116,6 +116,20 @@ export const EVENT = {
       description:
         'Swagat of the Baraat followed by sacred Vedic mantras and seven auspicious pheras around the holy fire to unite Anshika & Prashant.',
       accent: 'from-[#5b0e2d] to-[#c2185b]',
+    },
+    {
+      id: 'kanya-prasthan',
+      name: 'Kanya Prasthan (Vidai)',
+      hindiName: 'कन्या प्रस्थान (विदाई)',
+      tagline: 'With love, blessings, and fond farewells.',
+      day: 'Tuesday',
+      date: '24th November 2026',
+      time: '8:00 AM onwards',
+      venue: 'Mankameshwar Palace',
+      city: 'Kanpur, Uttar Pradesh',
+      description:
+        'With love, blessings, and fond farewells as our beloved daughter Anshika embarks on her new journey.',
+      accent: 'from-rose-500 to-gold',
     },
   ],
 
