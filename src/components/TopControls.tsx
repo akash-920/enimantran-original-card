@@ -1,8 +1,16 @@
 import { useState, useRef, useEffect } from 'react';
-import { Volume2, VolumeX, Share2, Check } from 'lucide-react';
+import { Volume2, VolumeX, Share2, Check, Sparkles } from 'lucide-react';
 import { EVENT } from '../lib/event';
 
-export default function TopControls({ autoPlayTrigger }: { autoPlayTrigger?: boolean }) {
+export default function TopControls({
+  autoPlayTrigger,
+  flowerShower = true,
+  onToggleFlowerShower,
+}: {
+  autoPlayTrigger?: boolean;
+  flowerShower?: boolean;
+  onToggleFlowerShower?: () => void;
+}) {
   const [playing, setPlaying] = useState(false);
   const [copied, setCopied] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -69,6 +77,27 @@ export default function TopControls({ autoPlayTrigger }: { autoPlayTrigger?: boo
     <>
       {/* Floating Top Controls */}
       <div className="fixed top-5 right-5 z-40 flex items-center gap-2.5">
+        {/* Flower Shower Petals Toggle */}
+        {onToggleFlowerShower && (
+          <button
+            type="button"
+            onClick={onToggleFlowerShower}
+            className={`relative flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-gold-light/50 bg-maroon-deep/90 shadow-lg backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-maroon cursor-pointer ${
+              flowerShower ? 'text-rose-400' : 'text-gold-light/50'
+            }`}
+            title={flowerShower ? 'Pause flower petals shower' : 'Resume flower petals shower'}
+            aria-label={flowerShower ? 'Pause flower petals shower' : 'Resume flower petals shower'}
+          >
+            <Sparkles className="h-5 w-5" />
+            {flowerShower && (
+              <span className="absolute -top-0.5 -right-0.5 flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-rose-500" />
+              </span>
+            )}
+          </button>
+        )}
+
         {/* Music Player Button */}
         <button
           type="button"
